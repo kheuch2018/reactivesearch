@@ -60,7 +60,7 @@ class DataSearch extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		checkSomePropChange(
 			this.props,
 			nextProps,

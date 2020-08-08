@@ -116,7 +116,7 @@ class ReactiveList extends Component {
 		this.setReact(this.props);
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		if (
 			!isEqual(this.props.sortOptions, nextProps.sortOptions)
 			|| this.props.sortBy !== nextProps.sortBy

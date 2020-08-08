@@ -26,7 +26,7 @@ class DataController extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		if (!this.locked) {
 			if (!isEqual(this.props.defaultSelected, nextProps.defaultSelected)) {
 				this.updateQuery(nextProps.defaultSelected, nextProps);

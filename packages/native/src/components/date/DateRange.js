@@ -68,7 +68,7 @@ class DateRange extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		checkPropChange(this.props.react, nextProps.react, () => this.setReact(nextProps));
 
 		let startDate = null;

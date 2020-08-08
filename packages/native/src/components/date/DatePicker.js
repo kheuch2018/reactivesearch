@@ -55,7 +55,7 @@ class DatePicker extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		checkPropChange(this.props.react, nextProps.react, () => this.setReact(nextProps));
 
 		if (!isEqual(this.props.defaultSelected, nextProps.defaultSelected)) {

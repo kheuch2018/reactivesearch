@@ -111,7 +111,7 @@ class ReactiveMap extends Component {
 		this.setReact(this.props);
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		if (
 			this.props.sortBy !== nextProps.sortBy
 			|| this.props.size !== nextProps.size

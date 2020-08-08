@@ -60,7 +60,7 @@ class ReactiveComponent extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		if (nextProps.defaultQuery && !isEqual(nextProps.defaultQuery(), this.defaultQuery)) {
 			this.defaultQuery = nextProps.defaultQuery();
 			const { query, ...queryOptions } = this.defaultQuery || {};

@@ -52,7 +52,7 @@ class RangeSlider extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		checkPropChange(this.props.react, nextProps.react, () => this.setReact(nextProps));
 		checkSomePropChange(this.props, nextProps, ['showHistogram', 'interval'], () =>
 			this.updateQueryOptions(nextProps),
